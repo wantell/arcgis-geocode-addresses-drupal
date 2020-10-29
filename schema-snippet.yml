@@ -1,0 +1,17 @@
+# Schema for ArcGIS List Geocoder provider handler.
+
+geocoder_provider.configuration.arcgislist:
+  type: geocoder_provider_configuration
+  label: 'ArcGIS List token credentials'
+  mapping:
+    client_id:
+      type: string
+      label: 'Client ID'
+      description: '<a href="https://developers.arcgis.com/rest/geocode/api-reference/geocoding-authenticate-a-request.htm" target="blank">Authenticate a request to the ArcGIS World Geocoding Service</a>'
+    client_secret:
+      type: string
+      label: 'Client Secret'
+    sourceCountry:
+      type: string
+      label: 'Source country for country biasing (optional)'
+      nullable: true
